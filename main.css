@@ -1,119 +1,139 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
+/* Set margin and padding to 0 for the entire page */
+html, body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  padding: 0;
 }
 
-.homepage {
-  height: 100vh;
+/* Style the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
+  height: 80px;
+  padding: 0 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style the homepage hero section */
+.homepage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.hero {
   text-align: center;
-}
-
-.logo {
-  width: 200px;
-  height: 150px;
-  background-image: url("logo.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.motto {
-  color: #282323;
-  font-size: 36px;
-  font-weight: 600;
-  margin: 50px 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.description {
-  color: #282323;
-  font-size: 20px;
   margin-bottom: 50px;
-  max-width: 800px;
 }
 
-.frame1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 56px;
-  background-color: #206DB4;
-  border-radius: 10px;
-  color: #fff;
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-description {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
 }
 
-.frame1:hover {
-  background-color: #9CB4D1;
+.hero-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
 }
 
 .picture1 {
-  width: 400px;
-  height: 400px;
-  background-image: url("picture1.png");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url("https://via.placeholder.com/500");
   background-size: cover;
-  border-radius: 50%;
-  margin-bottom: 50px;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.aboutus,
-.contactus,
-.home {
-  color: #282323;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 30px;
-  transition: color 0.3s ease;
+/* Style the footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-top: 50px;
 }
 
-.aboutus:hover,
-.contactus:hover,
-.home:hover {
-  color: #9CB4D1;
-}
-
-.frame2 {
+.footer-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 56px;
-  background-color: #fff;
-  border: 2px solid #206DB4;
-  border-radius: 10px;
-  color: #206DB4;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.frame2:hover {
-  background-color: #206DB4;
+.footer-links a {
+  text-decoration: none;
   color: #fff;
+  margin-right: 20px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
