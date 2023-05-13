@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-        <link href="main.css" rel="stylesheet" />
+        <meta charset="UTF-8">
         <title>FuturePlans</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="main.css">
     </head>
-
     <body>
         <div class="homepage">
-            <div class="logo"></div>
-            <span class="motto">Success doesn't just happen. It is planned for.</span>
-            <span class="description">FuturePlans will help you be successful whether you are interested in academic programs or seeking employment. </span>
-            <a href="getstarted.html"/>
-                <div class="frame1">
-                    <span class="getstarted">Get Started</span>
-                </div>
-            </a>
-
-            <div class="picture1"></div>
-            
-            <a href="aboutus.html"/>
-                <span class="aboutus">About Us</span>
-            </a>
-
-            <a href="contactus.html"/>
-                <span class="contactus">Contact Us</span>
-            </a>
-
-            <a href="index.html"/>
-                <span class="home">Home</span>
-            </a>
-
-            <a href="login.html"/>
-                <div class="frame2">
-                    <span class="login">LOG IN</span>
-                </div>
-            </a>
-    
+            <header class="header">
+                <div class="logo"></div>
+                <h1 class="title">FuturePlans</h1>
+                <p class="motto">Success doesn't just happen. It is planned for.</p>
+                <p class="description">FuturePlans will help you be successful whether you are interested in academic programs or seeking employment.</p>
+                <a href="getstarted.html" class="button button-primary">Get Started</a>
+            </header>
+            <main class="main">
+                <section class="section-1">
+                    <h2 class="section-title">Section Title</h2>
+                    <p class="section-description">Section Description</p>
+                    <div class="picture1"></div>
+                </section>
+                <section class="section-2">
+                    <h2 class="section-title">About Us</h2>
+                    <a href="aboutus.html" class="button button-secondary">Learn More</a>
+                </section>
+                <section class="section-3">
+                    <h2 class="section-title">Contact Us</h2>
+                    <a href="contactus.html" class="button button-secondary">Get in Touch</a>
+                </section>
+            </main>
+            <footer class="footer">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="login.html" class="button button-secondary">Log In</a>
+            </footer>
         </div>
     </body>
 </html>
