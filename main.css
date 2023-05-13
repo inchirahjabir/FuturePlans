@@ -237,19 +237,3 @@ body {
   font-weight: 500;
   margin-top: 50px;
 }
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 20px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
