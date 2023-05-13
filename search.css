@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .background {
+    width: 100%;
+    height: 1024px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  
+  .logo {
+    width: 235px;
+    height: 175px;
+    background: url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .home {
+    height: 72px;
+    left: 389px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight:600;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .home:hover {
+    color: rgba(156, 180, 209, 1);
+  }
+  
+  .home:active {
+    color: rgba(0,0,0,1);
+  }
+  
+  .aboutus {
+    height: 72px;
+    left: 614px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight:600;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .aboutus:hover {
+    color: rgba(156, 180, 209, 1);
+  }
+  
+  .aboutus:active {
+    color: rgba(0,0,0,1);
+  }
+  
+  .contactus {
+    height: 72px;
+    left: 861px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight:600;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .contactus:hover {
+    color: rgba(156, 180, 209, 1);
+  }
+  
+  .contactus:active {
+    color: rgba(0,0,0,1);
+  }
+  
+  .icon {
+    width: 80px;
+    height: 80px;
+    background: url("icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: 1200px;
+    overflow: hidden;
+  }
+  
+  
+  .text1 {
+    width: 729px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 285px;
+    left: 356px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .frame1 {
+    width: 530px;
+    height: 327px;
+    background: rgb(80, 138, 191); 
+    opacity: 1;
+    position: absolute;
+    top: 470px;
+    left: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .frame1:hover {
+    background: rgba(156, 180, 209, 1);
+  }
+  
+  .fame1:active {
+    background: rgb(80, 138, 191); 
+  }
+
+
+  .text2 {
+    width: 339px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 520px;
+    left: 190px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+
+
+  .job {
+    width: 155px;
+    height: 156px;
+    background: url("job.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 610px;
+    left: 280px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .frame2 {
+    width: 530px;
+    height: 327px;
+    background: rgb(80, 138, 191); 
+    opacity: 1;
+    position: absolute;
+    top: 470px;
+    left: 750px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .frame2:hover {
+    background: rgba(156, 180, 209, 1);
+  }
+  
+  .fame2:active {
+    background: rgb(80, 138, 191); 
+  }
+
+
+  .text3 {
+    width: 400px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 520px;
+    left: 820px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .school {
+    width: 155px;
+    height: 156px;
+    background: url("school.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 610px;
+    left: 930px;
+    overflow: hidden;
+  }
+  

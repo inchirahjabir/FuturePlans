@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="jobsearch.css" rel="stylesheet" />
+        <title>Job Search</title>
+    </head>
+
+    <body>
+        <div class="logo"></div>
+
+        <a href="index.html"/>
+          <span class="home">Home</span>
+        </a>
+
+        <a href="aboutus.html"/>
+          <span class="aboutus">About Us</span>
+        </a>
+
+        <a href="contactus.html"/>
+            <span class="contactus">Contact Us</span>
+        </a>
+
+        <div class="icon"></div>
+
+        <span class="text1">Job search</span>
+
+        <div class="wrapper">
+          <div id="search-container">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search job name here.."
+            />
+            <button id="search">Search</button>
+            </div>
+
+            <br>
+
+            <div id="buttons">
+
+            <p style="font-family:Poppins"> All</p>
+
+            <button class="button-value" onclick="filterJob('all')">All</button>
+                  
+            <p style="font-family:Poppins"> Major</p>
+
+            <button class="button-value" onclick="filterJob('computerscience')"> Computer Science
+            </button>
+            <button class="button-value" onclick="filterJob('communication')"> Communication
+            </button>
+            <button class="button-value" onclick="filterJob('education')">
+            Education 
+            </button>
+  
+            <p style="font-family:Poppins"> Company</p>     
+
+            <button class="button-value" onclick="filterJob('humaninterest')"> Human Interest
+            </button>
+            <button class="button-value" onclick="filterJob('teachforamerica')"> Teach for America
+            </button>
+            <button class="button-value" onclick="filterJob('epic')"> EPIC
+            </button>
+            <button class="button-value" onclick="filterJob('vitamint')"> Vitamin T
+            </button>
+            <button class="button-value" onclick="filterJob('uline')"> Uline
+            </button>
+            <button class="button-value" onclick="filterJob('radioone')"> Radio One
+            </button>
+            <button class="button-value" onclick="filterJob('danielmurphyscholarshipfund')"> Daniel Murphy Scholarship Fund
+            </button>
+
+            <p style="font-family:Poppins"> Location</p>
+
+            <button class="button-value" onclick="filterJob('Indianapolis,IN')"> Indianapolis, IN
+            </button>
+            <button class="button-value" onclick="filterJob('SanFrancisco,CA')"> San Francisco, CA
+            </button>
+            <button class="button-value" onclick="filterJob('LosAngeles,CA')"> Los Angeles, CA
+            </button>
+            <button class="button-value" onclick="filterJob('Chicago,IL')"> Chicago, IL
+            </button>
+
+          </div>
+                
+          <div id="jobs"></div>
+
+        </div>
+  
+      <script src="jobsearch.js"></script>
+
+    </body>
+    
+</html>

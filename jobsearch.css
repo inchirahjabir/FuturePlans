@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    background-color: rgba(255,255,255,1);
+  }
+  
+  .logo {
+    width: 235px;
+    height: 175px;
+    background: url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .home {
+    height: 72px;
+    left: 389px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight:600;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .home:hover {
+    color: rgba(156, 180, 209, 1);
+  }
+  
+  .home:active {
+    color: rgba(0,0,0,1);
+  }
+  
+  .aboutus {
+    height: 72px;
+    left: 614px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight:600;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .aboutus:hover {
+    color: rgba(156, 180, 209, 1);
+  }
+  
+  .aboutus:active {
+    color: rgba(0,0,0,1);
+  }
+  
+  .contactus {
+    height: 72px;
+    left: 861px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 39px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,1);
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight:600;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .contactus:hover {
+    color: rgba(156, 180, 209, 1);
+  }
+  
+  .contactus:active {
+    color: rgba(0,0,0,1);
+  }
+  
+  .icon {
+    width: 80px;
+    height: 80px;
+    background: url("icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: 1200px;
+    overflow: hidden;
+  }
+
+
+  .text1 {
+    width: 729px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 285px;
+    left: 326px;
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+
+
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin-top: 450px;
+    border-radius: 10px;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(156, 180, 209, 1);
+    border: 2px solid rgba(32,109,180,1)
+  }
+
+  #search-container input:focus {
+    border-color: rgba(32,109,180,1);
+  }
+
+
+  #search-container button {
+    margin-left: 3em;
+    background-color: rgba(32,109,180,1);
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 0.5em;
+    height: 50px;
+  }
+
+  .button-value {
+    margin-top: 0px;
+    border: 2px solid rgba(32,109,180,1);
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: rgba(32,109,180,1);
+    cursor: pointer;
+    font-family: Poppins;
+  }
+  .active {
+    background-color: rgba(32,109,180,1);
+    color: rgba(255,255,255,1);
+  }
+  #jobs {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 1em 0;
+  }
+  .card {
+    background-color: rgba(156, 180, 209, 1);
+    max-width: 1000px;
+    margin-top: 5em;
+    margin-left: 40px;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  .container {
+    padding-top: 1em;
+    color: rgba(0, 0, 0, 1);
+    font-family: Poppins;
+    margin-left: 10px;
+  }
+  .container h5 {
+    margin-top: 0px;
+    font-weight: 1000;
+    font-size: 30px;
+    display:contents;
+  }
+  .container h6 {
+    margin-top: 0em;
+    font-weight: 500;
+    font-size: 20px;
+    display:block;
+  }
+  .container h7 {
+    font-weight: 200;
+    font-size: 16px;
+    display:table-footer-group;
+  }
+
+  .hide {
+    display: none;
+  }

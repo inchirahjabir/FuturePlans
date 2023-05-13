@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="schoolsearch.css" rel="stylesheet" />
+        <title>School Search</title>
+    </head>
+
+    <body>
+        <div class="logo"></div>
+
+        <a href="index.html"/>
+          <span class="home">Home</span>
+        </a>
+
+        <a href="aboutus.html"/>
+          <span class="aboutus">About Us</span>
+        </a>
+
+        <a href="contactus.html"/>
+            <span class="contactus">Contact Us</span>
+        </a>
+
+        <div class="icon"></div>
+
+        <span class="text1">School search</span>
+
+        <div class="wrapper">
+          <div id="search-container">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search program name here.."
+            />
+            <button id="search">Search</button>
+            </div>
+
+            <br>
+
+            <div id="buttons">
+
+            <p style="font-family:Poppins"> All</p>
+
+            <button class="button-value" onclick="filterProgram('all')">All</button>
+                  
+            <p style="font-family:Poppins"> Major</p>
+
+            <button class="button-value" onclick="filterProgram('computerscience')"> Computer Science
+            </button>
+            <button class="button-value" onclick="filterProgram('communication')"> Communication
+            </button>
+            <button class="button-value" onclick="filterProgram('education')"> Education 
+            </button>
+            </button>
+            <button class="button-value" onclick="filterProgram('psychology')"> Psychology
+            </button>
+  
+            <p style="font-family:Poppins"> School</p>     
+
+            <button class="button-value" onclick="filterProgram('georgetownuniversity')"> Georgetown University
+            </button>
+            <button class="button-value" onclick="filterProgram('georgiainstituteoftechnology')"> Georgia Institute of Technology
+            </button>
+            <button class="button-value" onclick="filterProgram('universityofsanfrancisco')"> University of San Francisco
+            </button>
+            <button class="button-value" onclick="filterProgram('universityofindianapolis')"> University of Indianapolis
+            </button>
+            <button class="button-value" onclick="filterProgram('pepperdineuniversity')"> Pepperdine University
+            </button>
+            <button class="button-value" onclick="filterProgram('bostonuniversity')"> Boston University
+            </button>
+
+            <p style="font-family:Poppins"> Location</p>
+
+            <button class="button-value" onclick="filterProgram('Indianapolis,IN')"> Indianapolis, IN
+            </button>
+            <button class="button-value" onclick="filterProgram('SanFrancisco,CA')"> San Francisco, CA
+            </button>
+            <button class="button-value" onclick="filterProgram('LosAngeles,CA')"> Los Angeles, CA
+            </button>
+            <button class="button-value" onclick="filterProgram('Washington,DC')"> Washington, DC
+            </button>
+            <button class="button-value" onclick="filterProgram('Boston,MA')"> Boston, MA
+            </button>
+            <button class="button-value" onclick="filterProgram('Atlanta,GA')"> Atlanta, GA
+            </button>
+
+            <p style="font-family:Poppins"> Semester</p>
+
+            <button class="button-value" onclick="filterProgram('fall')"> Fall
+            </button>
+            <button class="button-value" onclick="filterProgram('spring')"> Spring
+            </button>
+            <button class="button-value" onclick="filterProgram('fall&spring')"> Fall & Spring
+            </button>
+
+            <p style="font-family:Poppins"> Type</p>
+
+            <button class="button-value" onclick="filterProgram('masters')"> Masters
+            </button>
+            <button class="button-value" onclick="filterProgram('phd')"> PhD
+            </button>
+
+          </div>
+                
+          <div id="programs"></div>
+
+        </div>
+  
+      <script src="schoolsearch.js"></script>
+
+    </body>
+    
+</html>

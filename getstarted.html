@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="getstarted.css" rel="stylesheet" />
+        <title>Sign Up</title>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="logo"></div>
+
+            <a href="index.html"/>
+                <span class="home">Home</span>
+            </a>
+
+            <a href="aboutus.html"/>
+                <span class="aboutus">About Us</span>
+            </a>
+
+            <a href="contactus.html"/>
+                <span class="contactus">Contact Us</span>
+            </a>
+            
+            <div class="frame1">
+                <form name="f1" action = "registration.php" onsubmit = "return validation()" method = "post">  
+                    <p> 
+                        <span class="text2">Email</span>
+                        <input type="text" name="email" id="email" placeholder="Enter your email">
+                    </p>  
+                    <p>
+                        <span class="text3">Username</span>  
+                        <input type="text" name="user" id="user" placeholder="Enter a username"> 
+                    </p> 
+                    <p>
+                        <span class="text4">Password</span>  
+                        <input type="password" name="pass1" id="pass1" placeholder="Enter your password"> 
+                    </p>
+                    <p>
+                        <span class="text5">Confirm Password</span>   
+                        <input type="password" name="pass2" id="pass2" placeholder="Confirm your password">
+                    </p> 
+                    <p>     
+                        <input type =  "submit" id = "btn" value = "Sign up" />  
+                    </p> 
+                    <span class="text">Sign Up</span> 
+                </form> 
+            </div>  
+          
+            
+            <a href="login.html"/>
+                <div class="frame8">
+                    <span class="login">LOG IN</span>
+                </div>
+            </a>
+
+        </div>
+
+        <script>
+            // Check if the fields are not empty. If they are, print an error message. 
+            // Check if the passwords entered match. If they don't, print a message. 
+            function validation()  
+            {  
+                var em=document.f1.email.value; 
+                var id=document.f1.user.value;  
+                var ps1=document.f1.pass1.value; 
+                var ps2=document.f1.pass2.value; 
+
+                if(em.length =="" || id.length=="" || ps1.length=="" || ps2.length=="") {  
+                    alert("Please complete all the fields");  
+                    return false;  
+                } 
+                else if (ps1 != ps2)
+                {
+                    alert("The passwords don't match");  
+                    return false;
+                } 
+                else  
+                {  
+                    if(em.length=="") {  
+                        alert("Email is empty");  
+                        return false;  
+                    } 
+                    if(id.length=="") {  
+                        alert("Username is empty");  
+                        return false;  
+                    }   
+                    if (ps1.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                    if (ps2.length=="") {  
+                    alert("Please confirm the password");  
+                    return false;  
+                    }
+                }                             
+            }  
+        </script>   
+
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+        <link href="login.css" rel="stylesheet" />
+        <title>Log in</title>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="logo"></div>
+            
+            <a href="index.html"/>
+                <span class="home">Home</span>
+            </a>
+            
+            <a href="aboutus.html"/>
+                <span class="aboutus">About Us</span>
+            </a>
+
+            <a href="contactus.html"/>
+                <span class="contactus">Contact Us</span>
+            </a>
+
+            <div class="frame1">
+                <span class="text">Log in to Your Account</span>
+                
+                <span class="text2">Don't have an account?</span>
+
+                <a href="getstarted.html"/>
+                <span class="text3">Sign up here</span>
+                </a>
+
+                <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "post">  
+                    <p>  
+                        <span class="text4">Username</span>
+                        <input type = "text" id ="user" name  = "user" placeholder = "Enter your username"/>  
+                    </p>  
+                    <p>  
+                        <span class="text5">Password</span> 
+                        <input type = "password" id ="pass" name  = "pass" placeholder = "Enter your password"/>  
+                    </p>  
+                    <p>     
+                        <input type =  "submit" id = "btn" value = "Login" />  
+                    </p>  
+                </form> 
+            </div>   
+                
+            </div>
+        </div>
+        <script>  
+        // Check if the username and password fields are not empty. If they are, print an error message.
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("Username and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("Username is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script> 
+    </body>
+</html>
